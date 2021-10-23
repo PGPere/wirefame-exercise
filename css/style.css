@@ -8,15 +8,16 @@ body {
 
 header {
   background-color: rgb(23, 23, 24);
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
   height: 110px;
 }
 
 nav {
   width: 960px;
+  margin: 0 auto;
   padding: 1rem 0;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   align-content: space-around;
 }
@@ -53,7 +54,7 @@ main article h3 {
   font-size: x-large;
 }
 
-main section {
+main > section {
   display: flex;
   size: 50pt;
   flex-direction: row;
@@ -66,32 +67,34 @@ main section {
 main article {
   float: right;
   width: 480px;
-  padding: 1rem 0 0 1rem;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 1rem 0 0 2rem;
+  /* padding-top: 30px; */
+  /* padding-bottom: 30px; */
   text-justify: auto;
 }
 
 main article section {
   overflow: scroll;
-  height: 308px;
+  height: 290px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 main article a {
   display: inline-flex;
+  margin-top: 1rem;
   padding-block: 0.5rem;
   width: 10rem;
   color: black;
   justify-content: center;
   font-size: larger;
+  text-decoration: none;
   border: solid black;
 }
 footer {
   padding-top: 30px;
   background-color: rgb(23, 23, 24);
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
   height: 110px;
 }
